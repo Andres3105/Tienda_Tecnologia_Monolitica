@@ -31,7 +31,7 @@ Cuenta con interfaz moderna estilo glassmorphism y manejo dinámico de stock.
 ---
 
 ## 📂 Estructura del Proyecto
-├── app.py
+├── app.py/n
 ├── static/
 │ ├── css/
 │ ├── uploads/
