@@ -31,13 +31,22 @@ Cuenta con interfaz moderna estilo glassmorphism y manejo dinámico de stock.
 ---
 
 ## 📂 Estructura del Proyecto
-├── app.py/n
+
+```
+📦 proyecto
+├── app.py
 ├── static/
-│ ├── css/
-│ ├── uploads/
+│   ├── css/
+│   ├── uploads/
 ├── templates/
-│ ├── base.html
-│ ├── index.html
-│ ├── nuevo.html
-│ ├── editar.html
+│   ├── base.html
+│   ├── index.html
+│   ├── nuevo.html
+│   ├── editar.html
 └── README.md
+```
+
+👨‍💻 Autor
+Andrés Bohórquez
+Estudiante de Ingeniería de Software
+Bogotá, Colombia
