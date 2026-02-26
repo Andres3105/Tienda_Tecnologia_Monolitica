@@ -76,9 +76,7 @@ body {
 /* BADGE STOCK */
 /* ========================= */
 
-.stock-bajo {
-    background: linear-gradient(45deg, #ff9800, #ff6d00);
-    box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+.stock {
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -86,23 +84,19 @@ body {
     color: white;
 }
 
+.stock-bajo {
+    background: linear-gradient(45deg, #ff9800, #ff6d00);
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
+}
+
 .stock-normal {
     background: linear-gradient(45deg, #00ffcc, #00c853);
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: white;
 }
 
 .stock-agotado {
     background: linear-gradient(45deg, #d50000, #8e0000);
     box-shadow: 0 0 12px rgba(213, 0, 0, 0.7);
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
     font-weight: 700;
-    color: white;
 }
 
 /* ========================= */

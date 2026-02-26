@@ -18,7 +18,8 @@
 
                 <form 
                     action="{% if producto %}/actualizar/{{ producto.id }}{% else %}/guardar{% endif %}" 
-                    method="POST">
+                    method="POST"
+                    enctype="multipart/form-data">
 
                     <div class="mb-3">
                         <label class="form-label">Nombre</label>
@@ -45,6 +46,11 @@
                         <label class="form-label">Stock</label>
                         <input type="number" name="stock" class="form-control"
                                value="{{ producto.stock if producto else '' }}" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Imagen</label>
+                        <input type="file" name="imagen" class="form-control">
                     </div>
 
                     <div class="d-grid">

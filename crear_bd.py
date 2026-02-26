@@ -9,7 +9,8 @@ CREATE TABLE IF NOT EXISTS producto (
     nombre TEXT,
     descripcion TEXT,
     precio REAL,
-    stock INTEGER
+    stock INTEGER,
+    imagen TEXT
 )
 """)
 

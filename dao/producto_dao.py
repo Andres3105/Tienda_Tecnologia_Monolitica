@@ -21,8 +21,8 @@ class ProductoDAO:
         conn = get_connection()
         cursor = conn.cursor()
         cursor.execute(
-            "INSERT INTO producto (nombre, descripcion, precio, stock) VALUES (?, ?, ?, ?)",
-            (producto.nombre, producto.descripcion, producto.precio, producto.stock)
+            "INSERT INTO producto (nombre, descripcion, precio, stock, imagen) VALUES (?, ?, ?, ?, ?)",
+            (producto.nombre, producto.descripcion, producto.precio, producto.stock, producto.imagen)
         )
         conn.commit()
         conn.close()
@@ -45,9 +45,9 @@ class ProductoDAO:
         cursor = conn.cursor()
         cursor.execute("""
             UPDATE producto
-            SET nombre = ?, descripcion = ?, precio = ?, stock = ?
+            SET nombre = ?, descripcion = ?, precio = ?, stock = ?, imagen = ?
             WHERE id = ?
-        """, (producto.nombre, producto.descripcion, producto.precio, producto.stock, producto.id))
+        """, (producto.nombre, producto.descripcion, producto.precio, producto.stock, producto.imagen, producto.id))
         conn.commit()
         conn.close()
 
