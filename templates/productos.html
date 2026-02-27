@@ -20,7 +20,7 @@
         <p>Stock: {{ p.stock }}</p>
         {% if p.stock == 0 %}
             <span class="stock stock-agotado">❌ Agotado</span>
-        {% elif p.stock < 5 %}
+        {% elif p.stock < 10 %}
             <span class="stock stock-bajo">⚠ Stock Bajo</span>
         {% else %}
             <span class="stock stock-normal">Disponible</span>
